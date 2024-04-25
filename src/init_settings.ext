@@ -1,7 +1,3 @@
-#include "conv\cfg\defines.hpp"
-#include "conv\cfg\dialogs.hpp"
-#include "missionConversations.hpp"
-#include "sentences.bikb"
 // Custom Loading Texts
 //#include "intel\loading_Tips.hpp"
 
@@ -32,7 +28,7 @@ respawn = "BASE";
 respawnDelay = 5;
 respawnOnStart = -1;
 respawnVehicleDelay = 3;
-respawnTemplates[] = {"MenuPosition", "Tickets", "Group"};
+respawnTemplates[] = {"MenuPosition", "Spectator", "Tickets", "Group"};
 respawnTemplatesVirtual[] = {};
 
 // Garbage Collection
@@ -44,13 +40,14 @@ class Extended_PreInit_EventHandlers {
 	SESOMission = call compile preprocessFileLineNumbers "XEH_preInit.sqf";
 };
 
+// Custom SESO Discord Rich Presence
+#include "functions\richPresence\SESO_CfgDiscordRichPresence.hpp"
+
 class CfgNotifications {
 	class MedicalNotif
 	{
 		title = "MEDICAL TREATMENT";
-		iconPicture = "z\ace\addons\medical_gui\ui\cross.paa"
-		//iconPicture = "a3\characters_f\data\ui\icon_medic_ca.paa"
-		//iconPicture = "a3\characters_f\data\ui\icon_med_ca.paa"
+		iconPicture = "z\ace\addons\medical_gui\ui\cross.paa";
 		description = "%1 is treating your %2";
 		duration = 8;
 	};
@@ -58,9 +55,7 @@ class CfgNotifications {
 	class SetupOverNotif
 	{
 		title = "SETUP IS OVER";
-		iconPicture = "a3\ui_f\data\igui\rsctitles\mpprogress\timer_ca.paa"
-		//iconPicture = "a3\characters_f\data\ui\icon_medic_ca.paa"
-		//iconPicture = "a3\characters_f\data\ui\icon_med_ca.paa"
+		iconPicture = "a3\ui_f\data\igui\rsctitles\mpprogress\timer_ca.paa";
 		description = "Setup timer has run out. Mission starts now.";
 		duration = 10;
 	};
@@ -68,9 +63,7 @@ class CfgNotifications {
 	class SetupCanceledNotif
 	{
 		title = "SETUP IS CANCELED";
-		iconPicture = "a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_exit_cross_ca.paa"
-		//iconPicture = "a3\characters_f\data\ui\icon_medic_ca.paa"
-		//iconPicture = "a3\characters_f\data\ui\icon_med_ca.paa"
+		iconPicture = "a3\ui_f\data\gui\rsc\rscdisplayarcademap\icon_exit_cross_ca.paa";
 		description = "Setup timer has been cancelled manually by %1";
 		duration = 10;
 	};
@@ -83,45 +76,16 @@ class CfgDebriefingSections {
 	#endif
 };
 
-// HALs Store
-#define HALs_DEF_INIT
-	#include "HALs\Addons\main\config.hpp"
-#undef HALs_DEF_INIT
-
 class CfgFunctions
 {
-	// Conversation System
-	#include "conv\cfg\functions.hpp"
 	// SESO Mission Scripts
 	#include "functions\cfgFunctions.hpp"
-	// HALs Store
-	#define HALs_DEF_FUNCTIONS
-		#include "HALs\Addons\main\config.hpp"
-	#undef HALs_DEF_FUNCTIONS
 };
 
-class IMW_EmptyDisplay
-{
-   idd = 5000;
-   duration = 1e+009; //Time in seconds the resource will stay visible for. 1e+1000 = 1 * 10^1000 = never disappear
-   onLoad = "uiNamespace setVariable ['IMW_EmptyDisplay', _this select 0];";
-   movingenable = false;
-
-   class Controls
-   {
-   };
-};
 
 class CfgSounds
 {
-	sounds[] =  {radioclick,WhistleShort,WhistleLong};
-
-	class radioclick
-	{
-		name = "radioclick";
-		sound[] = {src\snd\radioclick.ogg, 1, 1.0};
-		titles[] = {0, ""};
-	};
+	sounds[] =  {WhistleShort,WhistleLong};
 
 	class WhistleShort {
         name = "";
@@ -194,7 +158,7 @@ class ACEX_Fortify_Presets {
     };
 
 	class SESO_offensive_preset {
-		displayName = "Offensive Structures"
+		displayName = "Offensive Structures";
 		objects[] = {
 			{"I_G_HMG_02_high_F",125},
 			{"CUP_B_SPG9_CDF", 200},
@@ -203,16 +167,17 @@ class ACEX_Fortify_Presets {
 	};
 
 	class SESO_logistics_preset {
-		displayName = "Logistics Equipment"
+		displayName = "Logistics Equipment";
 		objects[] = {
 			{"ACE_Wheel",50},
 			{"ACE_Track",50},
-			{"Land_CanisterFuel_F",100}
+			{"Land_CanisterFuel_F",100},
+			{"Box_NATO_Support_F",50}
 		};
 	};
 
 	class SESO_climbing_preset {
-		displayName = "Climbing Equipment"
+		displayName = "Climbing Equipment";
 		objects[] = {
 			{"Land_Plank_01_4m_F",10},
 			{"Land_Plank_01_8m_F",20}
@@ -220,22 +185,28 @@ class ACEX_Fortify_Presets {
 	};
 
 	class SESO_green_combo_preset {
-		displayName = "All Equipment and Structures (Green)"
+		displayName = "All Equipment and Structures (Green)";
 		objects[] = {
-			{"Land_HBarrier_01_tower_green_F",50, "SESO_defensive_preset"},
-			{"Land_BagBunker_01_large_green_F",100, "SESO_defensive_preset"},
-			{"Land_BagBunker_01_small_green_F",25, "SESO_defensive_preset"},
-			{"Land_CzechHedgehog_01_old_F",10, "SESO_defensive_preset"},
-			{"Land_BagFence_01_round_green_F",5, "SESO_defensive_preset"},
-			{"Land_BagFence_01_long_green_F",10, "SESO_defensive_preset"},
-			{"I_G_HMG_02_high_F",125, "SESO_offensive_preset"},
-			{"CUP_B_SPG9_CDF", 200, "SESO_offensive_preset"},
-			{"LIB_leFH18_AT",250, "SESO_offensive_preset"},
-			{"ACE_Wheel",50, "SESO_logistics_preset"},
-			{"ACE_Track",50, "SESO_logistics_preset"},
-			{"Land_CanisterFuel_F",100, "SESO_logistics_preset"},
-			{"Land_Plank_01_4m_F",10, "SESO_climbing_preset"},
-			{"Land_Plank_01_8m_F",20, "SESO_climbing_preset"}
+			{"Land_HBarrier_01_tower_green_F",5, "SESO_defensive_preset"},
+			{"Land_BagBunker_01_large_green_F",5, "SESO_defensive_preset"},
+			{"Land_BagBunker_01_small_green_F",2, "SESO_defensive_preset"},
+			{"Land_CzechHedgehog_01_old_F",1, "SESO_defensive_preset"},
+			{"Land_BagFence_01_round_green_F",1, "SESO_defensive_preset"},
+			{"Land_BagFence_01_long_green_F",1, "SESO_defensive_preset"},
+			{"CUP_B_CUP_SearchLight_static_US",1, "SESO_offensive_preset"},
+			{"I_G_HMG_02_high_F",1, "SESO_offensive_preset"},
+			{"CUP_B_Igla_AA_pod_CDF", 2, "SESO_offensive_preset"},
+			{"CUP_B_SPG9_CDF", 3, "SESO_offensive_preset"},
+			{"CFP_B_USARMY_TOW_TriPod_US", 4, "SESO_offensive_preset"},
+			{"cwr3_b_fia_mk19", 5, "SESO_offensive_preset"},
+			{"CUP_O_D30_AT_RUS_M_Desert",6, "SESO_offensive_preset"},
+			{"LIB_leFH18_AT",3, "SESO_offensive_preset"},
+			{"ACE_Wheel",5, "SESO_logistics_preset"},
+			{"ACE_Track",5, "SESO_logistics_preset"},
+			{"Land_CanisterFuel_F",5, "SESO_logistics_preset"},
+			{"Box_NATO_Support_F",1, "SESO_logistics_preset"},
+			{"Land_Plank_01_4m_F",1, "SESO_climbing_preset"},
+			{"Land_Plank_01_8m_F",2, "SESO_climbing_preset"}
 		};
 	};
 };

@@ -2,8 +2,8 @@
 // https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#create-a-custom-setting-for-mission-or-mod
 
 #define PLAYER_UNITS_ITEMS ["LIB_Sten_Mk5","LIB_32rnd_9x19_t","LIB_Colt_M1911","LIB_7Rnd_45ACP","U_LIB_GBR_NCO_ParaCamo02v02pSgtM1Tho","JMSSA_ita_VAmmoSMG","ACE_MapTools","LIB_US_M18","LIB_US_M18_Green","LIB_US_M18_Red","B_LIB_UK_HSack_Blanco","ACE_elasticBandage","ACE_packingBandage","ACE_EntrenchingTool","ACE_epinephrine","ACE_morphine","ACE_tourniquet","ACE_splint","ACE_Flashlight_MX991","H_LIB_US_HelmetKaki0F_WOWhiteWO","ItemMap","ItemRadioAcreFlagged","LIB_GER_ItemCompass_deg","LIB_GER_ItemWatch","LIB_M1_Garand","LIB_8Rnd_762x63_t","LIB_FLARE_PISTOL","LIB_1Rnd_flare_white","U_LIB_GBR_EnlMan_ParaCamo03v01pPvtSmLE","JMSSA_ita_VAmmoBelt","LIB_US_Mk_2","LIB_1Rnd_flare_green","B_LIB_SOV_RA_Radio","ACRE_PRC152","H_LIB_US_HelmetKaki0C_NxNx","LIB_8Rnd_762x63","U_LIB_GBR_EnlMan_ParaCamo02v03pPvtMedSmLE","B_LIB_SOV_RA_MedicalBag_Empty","ACE_bloodIV","ACE_bloodIV_500","ACE_adenosine","ACE_surgicalKit","H_LIB_US_Helmetos_MedCRRB1234","LIB_M1919A6","LIB_50Rnd_762x63","JMSSA_ita_VAmmoStrip","LIB_M1A1_Bazooka","LIB_1Rnd_60mm_M6","JMSSA_ita_VCrewStrip","B_LIB_US_RocketBag_Empty","LIB_32Rnd_9x19_Sten"]
-#define FORGOTTEN_CUP_ITEMS ["ACRE_PRC152","ACRE_PRC343","ACE_elasticBandage","ACE_packingBandage","ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","ACE_CableTie","ACE_bodyBag","ACE_DefusalKit","ACE_EntrenchingTool","ACE_epinephrine","ACE_Fortify","ACE_Flashlight_MX991","ACE_Clacker","ACE_MapTools","ACE_morphine","ACE_personalAidKit","ACE_SpareBarrel_Item","ACE_splint","ACE_SpottingScope","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","ACE_surgicalKit","ACE_tourniquet","ACE_wirecutter","ACE_Chemlight_HiGreen","B_IR_Grenade","ACE_HandFlare_Green","SmokeShellGreen","SmokeShellRed","SmokeShellPurple","HandGrenade","DemoCharge_Remote_Mag","ACE_artilleryTable","ACE_rope12","Old_Camera_Color_HUD","Old_Camera_Color","Old_Camera_HUD","Old_Camera","Nikon_DSLR_HUD","Nikon_DSLR","immersion_pops_poppack","murshun_cigs_lighter","murshun_cigs_matches","murshun_cigs_cigpack","immersion_cigs_cigar0","murshun_cigs_cig0","immersion_pops_pop0","immersion_cigs_cigar0_nv","murshun_cigs_cig0_nv","ACE_VMM3"]
-#define FORGOTTEN_WW2_ITEMS ["ACRE_PRC152","ACE_elasticBandage","ACE_packingBandage","ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","ACE_CableTie","ACE_bodyBag","ACE_DefusalKit","ACE_EntrenchingTool","ACE_epinephrine","ACE_Fortify","ACE_Flashlight_MX991","ACE_LIB_LadungPM","ACE_LIB_FireCord","ACE_MapTools","ACE_morphine","ACE_personalAidKit","ACE_SpareBarrel_Item","ACE_splint","ACE_surgicalKit","ACE_tourniquet","ACE_wirecutter","ACE_HandFlare_Green","SmokeShellGreen","SmokeShellRed","SmokeShellYellow","SmokeShellPurple","HandGrenade","ACE_artilleryTable","ACE_rope12","Old_Camera_Color_HUD","Old_Camera_Color","Old_Camera_HUD","Old_Camera","immersion_pops_poppack","murshun_cigs_lighter","murshun_cigs_matches","murshun_cigs_cigpack","immersion_cigs_cigar0","murshun_cigs_cig0","immersion_pops_pop0","immersion_cigs_cigar0_nv","murshun_cigs_cig0_nv","ACE_VMM3"]
+#define FORGOTTEN_CUP_ITEMS ["ACRE_PRC152","ACRE_PRC343","ACE_elasticBandage","ACE_packingBandage","ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","ACE_CableTie","ACE_bodyBag","ACE_DefusalKit","ACE_EntrenchingTool","ACE_epinephrine","ACE_Fortify","ACE_Flashlight_MX991","ACE_Clacker","ACE_MapTools","ACE_morphine","ACE_personalAidKit","ACE_SpareBarrel_Item","ACE_splint","ACE_SpottingScope","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","ACE_SpraypaintWhite","ACE_SpraypaintYellow","ACE_surgicalKit","ACE_tourniquet","ACE_wirecutter","ACE_Chemlight_HiGreen","B_IR_Grenade","ACE_HandFlare_Green","SmokeShellGreen","SmokeShellRed","SmokeShellPurple","HandGrenade","DemoCharge_Remote_Mag","ACE_rope12","Old_Camera_Color_HUD","Old_Camera_Color","Old_Camera_HUD","Old_Camera","Nikon_DSLR_HUD","Nikon_DSLR","immersion_pops_poppack","murshun_cigs_lighter","murshun_cigs_matches","murshun_cigs_cigpack","immersion_cigs_cigar0","murshun_cigs_cig0","immersion_pops_pop0","immersion_cigs_cigar0_nv","murshun_cigs_cig0_nv","ACE_VMM3", "ACE_painkillers", "acex_intelitems_notepad", "WBK_HeadLampItem", "ACE_Sandbag_empty"]
+#define FORGOTTEN_WW2_ITEMS ["ACRE_PRC152","ACE_elasticBandage","ACE_packingBandage","ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","ACE_CableTie","ACE_bodyBag","ACE_DefusalKit","ACE_EntrenchingTool","ACE_epinephrine","ACE_Fortify","ACE_Flashlight_MX991","ACE_LIB_LadungPM","ACE_LIB_FireCord","ACE_MapTools","ACE_morphine","ACE_personalAidKit","ACE_SpareBarrel_Item","ACE_splint","ACE_surgicalKit","ACE_tourniquet","ACE_wirecutter","ACE_HandFlare_Green","SmokeShellGreen","SmokeShellRed","SmokeShellYellow","SmokeShellPurple","HandGrenade","ACE_rope12","Old_Camera_Color_HUD","Old_Camera_Color","Old_Camera_HUD","Old_Camera","immersion_pops_poppack","murshun_cigs_lighter","murshun_cigs_matches","murshun_cigs_cigpack","immersion_cigs_cigar0","murshun_cigs_cig0","immersion_pops_pop0","immersion_cigs_cigar0_nv","murshun_cigs_cig0_nv","ACE_VMM3","ACE_painkillers", "acex_intelitems_notepad", "WBK_HeadLampItem", "ACE_Sandbag_empty"]
 
 
 ////////////////////////////////////////////////////////////////
@@ -104,149 +104,6 @@
 		};
     }
 ] call CBA_fnc_addSetting;
-/*
-////////////////////////////////////////////////////////////////
-// Custom Map Locations
-////////////////////////////////////////////////////////////////
-[
-    "SESO_setting_CustomMapLocationsNameVillageColorSelect",
-    "LIST",
-    ["Marker Color for Village Location", "Set the color of marker to represent this location. MUST BE UNIQUE COLOR."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    [
-		["Default","ColorBlack","ColorGrey","ColorRed","ColorBrown","ColorOrange","ColorYellow","ColorKhaki","ColorGreen","ColorBlue","ColorPink","ColorWhite"],
-		["Default","Black","Grey","Red","Brown","Orange","Yellow","Khaki","Green","Blue","Pink","White"],
-		5
-	],
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_CustomMapLocationsNameCityColor",
-    "LIST",
-    ["Marker Color for City Location", "Set the color of marker to represent this location. MUST BE UNIQUE COLOR."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    [
-		["Default","ColorBlack","ColorGrey","ColorRed","ColorBrown","ColorOrange","ColorYellow","ColorKhaki","ColorGreen","ColorBlue","ColorPink","ColorWhite"],
-		["Default","Black","Grey","Red","Brown","Orange","Yellow","Khaki","Green","Blue","Pink","White"],
-		10
-	],
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_CustomMapLocationsNameCityCapitalColor",
-    "LIST",
-    ["Marker Color for City Capital Location", "Set the color of marker to represent this location. MUST BE UNIQUE COLOR."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    [
-		["Default","ColorBlack","ColorGrey","ColorRed","ColorBrown","ColorOrange","ColorYellow","ColorKhaki","ColorGreen","ColorBlue","ColorPink","ColorWhite"],
-		["Default","Black","Grey","Red","Brown","Orange","Yellow","Khaki","Green","Blue","Pink","White"],
-		3
-	],
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_CustomMapLocationsNameLocalColor",
-    "LIST",
-    ["Marker Color for Local Location", "Set the color of marker to represent this location. MUST BE UNIQUE COLOR."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    [
-		["Default","ColorBlack","ColorGrey","ColorRed","ColorBrown","ColorOrange","ColorYellow","ColorKhaki","ColorGreen","ColorBlue","ColorPink","ColorWhite"],
-		["Default","Black","Grey","Red","Brown","Orange","Yellow","Khaki","Green","Blue","Pink","White"],
-		7
-	],
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_CustomMapLocationsHillColor",
-    "LIST",
-    ["Marker Color for Hill Location", "Set the color of marker to represent this location. MUST BE UNIQUE COLOR."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    [
-		["Default","ColorBlack","ColorGrey","ColorRed","ColorBrown","ColorOrange","ColorYellow","ColorKhaki","ColorGreen","ColorBlue","ColorPink","ColorWhite"],
-		["Default","Black","Grey","Red","Brown","Orange","Yellow","Khaki","Green","Blue","Pink","White"],
-		1
-	],
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_CustomMapLocationsVegetationFirColor",
-    "LIST",
-    ["Marker Color for Temperate Forest Location", "Set the color of marker to represent this location. MUST BE UNIQUE COLOR."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    [
-		["Default","ColorBlack","ColorGrey","ColorRed","ColorBrown","ColorOrange","ColorYellow","ColorKhaki","ColorGreen","ColorBlue","ColorPink","ColorWhite"],
-		["Default","Black","Grey","Red","Brown","Orange","Yellow","Khaki","Green","Blue","Pink","White"],
-		8
-	],
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_CustomMapLocationsVegetationPalmColor",
-    "LIST",
-    ["Marker Color for Tropical Forest Location", "Set the color of marker to represent this location. MUST BE UNIQUE COLOR."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    [
-		["Default","ColorBlack","ColorGrey","ColorRed","ColorBrown","ColorOrange","ColorYellow","ColorKhaki","ColorGreen","ColorBlue","ColorPink","ColorWhite"],
-		["Default","Black","Grey","Red","Brown","Orange","Yellow","Khaki","Green","Blue","Pink","White"],
-		6
-	],
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_CustomMapLocationsNameMarineColor",
-    "LIST",
-    ["Marker Color for Marine Location", "Set the color of marker to represent this location. MUST BE UNIQUE COLOR."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    [
-		["Default","ColorBlack","ColorGrey","ColorRed","ColorBrown","ColorOrange","ColorYellow","ColorKhaki","ColorGreen","ColorBlue","ColorPink","ColorWhite"],
-		["Default","Black","Grey","Red","Brown","Orange","Yellow","Khaki","Green","Blue","Pink","White"],
-		9
-	],
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_CustomMapLocationsRockAreaColor",
-    "LIST",
-    ["Marker Color for Rock Location", "Set the color of marker to represent this location. MUST BE UNIQUE COLOR."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    [
-		["Default","ColorBlack","ColorGrey","ColorRed","ColorBrown","ColorOrange","ColorYellow","ColorKhaki","ColorGreen","ColorBlue","ColorPink","ColorWhite"],
-		["Default","Black","Grey","Red","Brown","Orange","Yellow","Khaki","Green","Blue","Pink","White"],
-		2
-	],
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_CustomMapLocationsEntityLayerName",
-    "EDITBOX",
-    ["Custom Map Locations Entity Layer Name", "CASE SENSITIVE name of the entity layer or folder that defines custom map locations. If not found, no map locations will be defined. Only objects in this layer will be affected."],
-	["SESO Mission Framework", "Custom Map Locations"],
-    "Map Locations",
-    true, // _isGlobal
-    {
-		params ["_value"];
-
-        // Server only
-		if !(isServer) exitWith {};
-		// Check if layer is exists
-		if (count (getMissionLayerEntities _value) <= 0) exitWith {};
-		private _entityLayerName = (getMissionLayerEntities _value) select 1;
-		// Check if layer has entities
-		if ((count _entityLayerName) == 0) exitWith {};
-
-		[_value] call SESO_fnc_defineMapLocationsServer;
-    }
-] call CBA_fnc_addSetting;
-*/
 ////////////////////////////////////////////////////////////////
 // ZBE AI Caching
 ////////////////////////////////////////////////////////////////
@@ -270,7 +127,8 @@
     "Cache Exceptions",
     true, // _isGlobal
     {  
-		if !(missionNamespace getVariable "SESO_setting_CacheEnable") exitWith {};
+		// Might as well do this regardless of the above setting
+		//if !(missionNamespace getVariable "SESO_setting_CacheEnable") exitWith {};
         params ["_value"];
         // Server only
         if !(isServer) exitWith {};
@@ -313,21 +171,56 @@
     ["Enable ACE3 Advanced Fortify", "Check to enable additional options and blueprints for the Fortify Tool and Engineers. Uncheck to leave it unchanged."],
 	["SESO Mission Framework", "ACE3 Advanced Fortify"],
     true,
-    true // _isGlobal
-] call CBA_fnc_addSetting;
-
-[
-    "SESO_setting_FortifyAdvancedSwitcher",
-    "EDITBOX",
-    ["Set Object to be Blueprint Switcher", "Variable name of object that would be used by engineers to switch blueprints. Traditionally, a respawn vehicle but can be anything."],
-	["SESO Mission Framework", "ACE3 Advanced Fortify"],
-    "logi_truck",
     true, // _isGlobal
     {
         params ["_value"];
-		if !(missionNamespace getVariable "SESO_setting_FortifyAdvancedEnable") exitWith {};
+		if !(_value) exitWith {};
         // Global
-        [missionNamespace getVariable _value] call SESO_fnc_fortifyInit;
+        [] call SESO_fnc_fortifyInit;
+    }
+] call CBA_fnc_addSetting;
+
+////////////////////////////////////////////////////////////////
+// Animation Multipliers
+////////////////////////////////////////////////////////////////
+[
+    "SESO_setting_SwimSpeedMultiplier",
+    "EDITBOX",
+    ["Set Swimming Speed Multiplier", "Set multiplier for swimming faster. Set to 1 for vanilla speed."],
+	["SESO Mission Framework", "Animation Multiplers"],
+    "2.5",
+    true, // _isGlobal
+    {
+        params ["_value"];
+		_value = parseNumber _value;
+		//if (_value <= 1) exitWith {};
+		// Player only
+		if !(hasInterface) exitWith {};
+		private _SWIM_FASTER_ID = [] call SESO_fnc_swimFaster;
+    }
+] call CBA_fnc_addSetting;
+
+
+[
+    "SESO_setting_RoleFlagMultiplier",
+    "EDITBOX",
+    ["Set Operative Role Flags Penalty Multiplier", "Set multiplier for moving slower when holding weapons outside of your role. Set to 1 for vanilla speed."],
+	["SESO Mission Framework", "Animation Multiplers"],
+    "0.65",
+    true, // _isGlobal
+    {
+        params ["_value"];
+		_value = parseNumber _value;
+		if (_value == 1) exitWith {};
+		// Player only
+		if !(hasInterface) exitWith {};
+        player setVariable ["SESO_totalSpeed", 1];
+
+        [_value] spawn {
+			waitUntil {cba_missiontime > 0};
+			params ["_value"];
+			[] call SESO_fnc_roleFlags;
+		};
     }
 ] call CBA_fnc_addSetting;
 
@@ -392,11 +285,13 @@
         // Player only
 		if !(hasInterface) exitWith {};
         player enableStamina false;
+        player setCustomAimCoef 0.2;
         private _STAMINA_DISABLER_ID = player addEventHandler ["Respawn", {
             params ["_unit","_corpse"];
             if !(_unit == player) exitWith {};
 
             _unit enableStamina false;
+            _unit setCustomAimCoef 0.2;
         }];
     }
 ] call CBA_fnc_addSetting;
@@ -650,21 +545,19 @@
     }
 ] call CBA_fnc_addSetting;
 
-// BUG: Does not actually change swimming speed
 [
-    "SESO_setting_SwimSpeedMultiplier",
-    "EDITBOX",
-    ["Set Swimming Speed Multiplier", "Set multiplier for swimming faster. Set to 1 for vanilla speed."],
+    "SESO_setting_CutGrassEnable",
+    "CHECKBOX",
+    ["Enable Cutting Grass", "Check to allow all players to cut grass under ACE3 Self-Interact >> Equipment. Uncheck to remove it."],
 	["SESO Mission Framework"],
-    "2.5",
+    true,
     true, // _isGlobal
     {
         params ["_value"];
-		_value = parseNumber _value;
-		if (_value <= 1) exitWith {};
+		if !(_value) exitWith {};
 		// Player only
 		if !(hasInterface) exitWith {};
-		private _SWIM_FASTER_ID = [] call SESO_fnc_swimFaster;
+		[] call SESO_fnc_createCutGrassAction;
     }
 ] call CBA_fnc_addSetting;
 
@@ -700,5 +593,35 @@
             [] call SESO_fnc_snow;
         };
 		
+    }
+] call CBA_fnc_addSetting;
+
+[
+    "SESO_setting_ShowServerFps",
+    "CHECKBOX",
+    ["Show Server FPS", "Gets the server FPS and all the current units and updates a marker at the bottom left of the map."],
+	["SESO Mission Framework"],
+    true,
+    true, // _isGlobal
+    {
+		params ["_value"];
+        // Server only
+		if !(isServer) exitWith {};
+		[] spawn SESO_fnc_serverFpsLoop;
+    }
+] call CBA_fnc_addSetting;
+
+[
+    "SESO_setting_EnableDiscordRichPresence",
+    "CHECKBOX",
+    ["Enable SESO Discord Rich Presence", "Enable custom SESO Discord Rich Presence. Enable it for shameless promo!"],
+	["SESO Mission Framework"],
+    true,
+    true, // _isGlobal
+    {
+		params ["_value"];
+        // Player only
+		if !(hasInterface) exitWith {};
+		[] call SESO_fnc_initPlayerRichPresence;
     }
 ] call CBA_fnc_addSetting;
