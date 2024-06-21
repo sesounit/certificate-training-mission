@@ -2,10 +2,10 @@
 * Author: Dildo Sagbag
 *
 * Description:
-* Immersive teleport to vehicle script. Comes with a predefined set of vehicle names, otherwise uses the display name of the vehicle. Also checks if the vehicle exists or has space to be teleported to.
+* Immersive teleport to point script. Comes with a predefined set of point names, otherwise uses the display name of the point.
 *
 * Arguments:
-* 0: Target vehicle to teleport to. <OBJECT>
+* 0: Target point to teleport to. <OBJECT>
 * 1: Caller unit who is to be teleported to the target.<OBJECT>
 * 2: Time to wait until caller is teleported to target. Default 10 seconds  <NUMBER>
 * 3: Whether to teleport all players to vehicles, excluding Zeus players. Default false. <BOOLEAN>
@@ -15,10 +15,10 @@
 * None
 *
 * Examples:
-* [bobs_car, bob] call SESO_fnc_teleportToVehicle;
-* [bobs_plane, alice, 20] call SESO_fnc_teleportToVehicle;
-* [bobs_tank, cool_guy, 1, false, true] call SESO_fnc_teleportToVehicle;
-* [bobs_party_bus, bob, 10, true, true] call SESO_fnc_teleportToVehicle;
+* [bobs_car, bob] call SESO_fnc_teleportToPoint;
+* [bobs_plane, alice, 20] call SESO_fnc_teleportToPoint;
+* [bobs_tank, cool_guy, 1, false, true] call SESO_fnc_teleportToPoint;
+* [bobs_party_bus, bob, 10, true, true] call SESO_fnc_teleportToPoint;
 *
 * Public: Yes
 */
@@ -39,18 +39,21 @@ if ((_teleportAllPlayers == true) or (_teleportAllZeus == true)) exitWith {
 private _targetDisplayName = str _target;
 switch (_targetDisplayName) do
 {
-	case "respawn_bus": {_targetDisplayName = "Bus MHQ"};
-	case "respawn_truck": { _targetDisplayName = "Truck MHQ"};
-	case "respawn_boat": { _targetDisplayName = "Boat MHQ"};
-	case "respawn_heli": { _targetDisplayName = "Helicopter MHQ"};
-	case "drop_plane": { _targetDisplayName = "Drop Plane"};
+	case "med_flag_end": {_targetDisplayName = "Medical Training Area"};
+	case "log_flag_end": { _targetDisplayName = "Logistics Training Area"};
+	case "cav_flag_end": { _targetDisplayName = "Cavalry Training Area"};
+	case "inf_flag_end": { _targetDisplayName = "Infantry Training Area"};
+	case "med_flag_start": { _targetDisplayName = "Career Center"};
+	case "log_flag_start": { _targetDisplayName = "Career Center"};
+	case "cav_flag_start": { _targetDisplayName = "Career Center"};
+	case "inf_flag_start": { _targetDisplayName = "Career Center"};
 	default {_targetDisplayName = [configFile >> "CfgVehicles" >> typeOf vehicle _target] call BIS_fnc_displayName};
 };
 
-if (_target emptyPositions "cargo" <= 0)
-exitWith {
-	systemChat (format ["%1 is either full or unavailable. Please try again later.", _targetDisplayName]);
-};
+//if (_target emptyPositions "cargo" <= 0)
+///exitWith {
+//	systemChat (format ["%1 is either full or unavailable. Please try again later.", _targetDisplayName]);
+//};
 
 // TODO: Calculate distance to travel to target for dynamic wait time
 //_targetDistance = round (_caller distance _target);
@@ -66,7 +69,7 @@ for "_second" from _targetDistance to 0 step -1 do
 	sleep 1;
 };
 
-_caller moveInCargo _target;
+_caller setPosASL (getPosASL _target);
 _caller enableSimulation true;
 "dynamicBlur" ppEffectEnable true;
 "dynamicBlur" ppEffectAdjust [6];
